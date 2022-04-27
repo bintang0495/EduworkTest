@@ -77,6 +77,8 @@ const bilangan = (x) => {
       result = angka[x];
     } else if (x > 11 && x < 20) {
       result = angka[x % 10] + ' Belas ';
+    } else if (x === 100) {
+      result = 'Seratus';
     } else {
       result = angka[Math.floor(x / 10)] + ' Puluh ' + angka[x % 10];
     }
